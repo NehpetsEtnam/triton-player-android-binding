@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.21
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonPlayer.Android", "TritonPlayer.Android\TritonPlayer.Android.csproj", "{A3D7C8C0-A1E8-4D2C-9BF0-D5193DD7ACFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TritonAndroidSample", "TritonAndroidSample\TritonAndroidSample.csproj", "{43339B97-8753-4909-B59A-F44860F1944A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3D7C8C0-A1E8-4D2C-9BF0-D5193DD7ACFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D7C8C0-A1E8-4D2C-9BF0-D5193DD7ACFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D7C8C0-A1E8-4D2C-9BF0-D5193DD7ACFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D7C8C0-A1E8-4D2C-9BF0-D5193DD7ACFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43339B97-8753-4909-B59A-F44860F1944A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43339B97-8753-4909-B59A-F44860F1944A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43339B97-8753-4909-B59A-F44860F1944A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43339B97-8753-4909-B59A-F44860F1944A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3986C98-245D-43C9-B1DB-D06FE440A88E}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.VersionControlPolicy = $2
+	EndGlobalSection
+EndGlobal
