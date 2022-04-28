@@ -8,15 +8,13 @@ using AndroidX.AppCompat.App;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
 using AWidget = Android.Widget;
-using Com.Tritondigital.Player;
-using Android.Media;
 
 namespace TritonAndroidSample
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        TritonPlayer player = null;
+        AudioSource audioSource = null;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,31 +37,21 @@ namespace TritonAndroidSample
             stopButton.Click += StopButton_Click;
         }
 
-        private void StopButton_Click(object sender, EventArgs e)
+        private void StartButton_Click(object sender, EventArgs e)
         {
-            player?.Stop();
+            if (audioSource == null)
+                audioSource = new AudioSource();
+            audioSource?.Play();
         }
 
         private void PauseButton_Click(object sender, EventArgs e)
         {
-            player?.Pause();
+            audioSource?.Pause();
         }
 
-        private void StartButton_Click(object sender, EventArgs e)
+        private void StopButton_Click(object sender, EventArgs e)
         {
-            if (player == null)
-            {
-                Bundle settings = new Bundle();
-                //settings.PutString(TritonPlayer.SettingsStreamUrl, "http://storage.googleapis.com/automotive-media/Jazz_In_Paris.mp3");
-                settings.PutString(TritonPlayer.SettingsStationBroadcaster, "Triton Digital");
-                settings.PutString(TritonPlayer.SettingsStationName, "MOBILEFM");
-                settings.PutString(TritonPlayer.SettingsStationMount, "MOBILEFM_AACV2");
-                settings.PutString(TritonPlayer.SettingsPlayerServicesRegion, "AP");
-
-                player = new TritonPlayer(this, settings);
-            }
-
-            player?.Play();
+            audioSource?.Stop();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

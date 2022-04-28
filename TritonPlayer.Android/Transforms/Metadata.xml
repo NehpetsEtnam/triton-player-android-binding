@@ -2,6 +2,7 @@
   <add-node path="/api/package[@name='com.tritondigital.util']">
     <class abstract="false" deprecated="not deprecated" final="false" name="HttpGetRequest" static="true" visibility="public" extends="java.lang.Object"/>
   </add-node>
+
   <attr 
    path="/api/package[@name='com.tritondigital.player']/class[@name='CuePointHistory.ParserTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
    name="visibility">protected</attr>
@@ -14,6 +15,10 @@
   <attr 
    path="/api/package[@name='com.tritondigital.ads']/class[@name='Ad.TrackingUrlTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
    name="visibility">protected</attr>
+
+  <attr 
+   path="/api/package[@name='com.tritondigital.player']/class[@name='TritonPlayer']/constructor[@name='TritonPlayer' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.os.Bundle']]"
+   name="visibility">public</attr>
 
   <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='Provisioning.Listener']" />
   <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='SbmSseClient.SseClientListener']" />

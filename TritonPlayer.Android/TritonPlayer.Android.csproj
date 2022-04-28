@@ -72,8 +72,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\exoplayer-hls-2.17.1-sources.jar" />
-    <EmbeddedJar Include="Jars\exoplayer-core-2.17.1-sources.jar" />
+    <EmbeddedJar Include="Jars\exoplayer-core-2.15.0-sources.jar" />
+    <EmbeddedJar Include="Jars\exoplayer-hls-2.15.0-sources.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
